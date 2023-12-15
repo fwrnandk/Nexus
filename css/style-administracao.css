@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 1.5rem;
+    height: 40vh;
+    background-color: #000;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 3rem;
+}
+
+.user-txt h2 {
+    padding: 0 1rem;
+    color: #fff;
+}
+
+.user-txt a {
+    text-decoration: none;
+}
+
+.user-txt h2:hover {
+    color: #A400FF;
+    transition: 0.3s;
+}
+
+
+.menu-icon i {
+    font-size: 4vh;
+}
+
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    height: 90vh;
+    padding: .5rem;
+}
+
+.main .container {
+    width: 100vh;
+    padding-bottom: 3rem;
+    position: absolute;
+    top: 15vh;
+    background-color: #fff;
+    border-radius: 1.5vh;
+    box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.485);
+
+}
+
+.main .container h2 {
+    padding: 2rem 3rem;
+}
+
+.container-text {
+    text-align: center;
+    padding: .5rem 0;
+    
+    
+}
+
+.graficos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+.graficos a {
+    color: #000;
+}
+
+.graficos a:hover {
+    color: #A400FF;
+}
+
+/*.main .container h2::before {
+    content: '';
+    display: block;
+    width: 0.5rem;
+    height: 4rem;
+    background-color: #A400FF;
+    margin: 0 -.75rem;
+    position: absolute;
+}*/
+
+.button-adm button {
+    border: none;
+    background-color: #a400ff;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reparticoes {
+    display: flex;
+    padding: .75rem 1.5rem;
+}
+
+
+.retangulo {
+    width: 85vh;
+    height: auto;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 1px 5px 8px black;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+}
+
+
+.retangulo p {
+    color: #000;
+    margin-left: 15px;
+    padding-top: .25rem;
+}
+
+.reparticoes-txt {
+    margin-bottom: .5rem;
+}
+
+.reparticoes-txt a {
+    color: #000;
+    font-weight: 800;
+}
+
+.reparticoes-txt a:hover {
+    color: #A400FF;
+}
+
+
+.lateral-esquerda {
+    width: 1vh;
+    height: 100%;
+    background-color: purple;
+    position: absolute;
+    border-radius: 4px;
+    left: 0;
+    top: 0;
+}
+
+
+.erro-txt {
+    color: red;
+    font-weight: 900;
+    display: flex;
+    padding: .75rem 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/**/
+.button-gastos {
+    padding: .75rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.button-gastos .button {
+    width: 12vh;
+    height: 4vh;
+    background-color: #A400FF;
+    border: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.button-gastos .crie-txt {
+    font-weight: 700;
+}
+
+.button-gastos .button a {
+    color: #fff;
+}
+
+/**/
+.download-excel {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: .75rem 1.5rem;
+}
+
+.download-excel a {
+    color: #000;
+    text-decoration: none;
+}
+
+.download-excel a:hover {
+    color: #A400FF;
+}
+
+.download-excel p {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.gastos-txt {
+    display: flex;
+
+}
+
+.gastos-txt p {
+    padding: .75rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.ls-custom-select {
+    display: flex;
+    padding: 1rem 1.5rem;
+}
+
+.ls-custom-select p {
+    padding: .5rem 0rem;
+    font-weight: 700;
+}
+
+.ls-select {
+    background-color: #efe9ef;
+    color: #333;
+    border-radius: 3px;
+}
+
+.button-pesq {
+    border: none;
+    background-color: #A400FF;
+    padding: 0.4rem .5rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.calendario {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+
+}
+
+.caixa {
+    padding: .75rem 0rem;
+}
+
+form input {
+    padding: .20rem 0;
+    gap: 1rem;
+}
+
+
+.calend {
+    background-color: #efe9ef;
+    color: #333;
+    border-radius: 3px;
+    border: solid 1px;
+}
+
+.logo img {
+    width: 60px;
+    height: 65px;
+
+}
+
+@media(max-width: 1080px) {
+
+    
+    header {
+        padding: .75rem;
+        height: 50vh;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        height: 100vh;
+    }
+
+    .main .container {
+        width: 50vh;
+        padding-bottom: 5rem;
+        position: absolute;
+        top: 25vh;
+        background-color: #fff;
+        border-radius: 1.5vh;
+        box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.485);
+    }
+
+    .main .container h2 {
+        padding: 2rem 3rem;
+    }
+
+    .main .container h2::before {
+        content: '';
+        display: block;
+        width: 0.5rem;
+        height: 4rem;
+        background-color: #A400FF;
+        margin: 0 -.75rem;
+        position: absolute;
+    }
+
+    .menu a {
+        color: #fff;
+        font-size: 2vh;
+    }
+
+    .menu h1 {
+        padding: 3rem 0;
+        font-size: 3vh;
+    }
+    
+   
+}
+
+@media(max-width: 780px) {
+
+    .main .container {
+        top: 20vh;
+    }
+
+}

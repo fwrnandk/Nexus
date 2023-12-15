@@ -1,0 +1,35 @@
+CREATE DATABASE nexus_bd CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+USE nexus_bd;
+
+CREATE TABLE usuarios (
+    id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(255),
+	 email VARCHAR(255),
+	 cpf VARCHAR(14),
+	 data_nasc DATETIME,
+	 celular VARCHAR(22),
+	 tipo_doc VARCHAR(20),
+	 img_doc_frente VARCHAR(255),
+	 img_doc_verso VARCHAR(255),
+	 img_rosto VARCHAR(255),
+	 senha VARCHAR(255),
+	 CEP VARCHAR(9),
+	 endereco VARCHAR(255),
+	 numero VARCHAR(12),
+	 bairro VARCHAR(255),
+	 cidade VARCHAR(255),
+	 estado VARCHAR(2),
+	 created DATETIME,
+	 modified DATETIME,
+    PRIMARY KEY (id));
+    
+CREATE TABLE reparticoes (
+	id_rep INT NOT NULL AUTO_INCREMENT,
+	user_rep VARCHAR(220),
+	nome_rep VARCHAR(220),
+	valor DECIMAL(10,2) NOT NULL,
+	categoria VARCHAR(50),
+	created DATETIME,
+	modified DATETIME,
+	PRIMARY KEY(id_rep));

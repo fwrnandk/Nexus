@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background-color: #efe9ef;
+}
+
+.imagem-porco img {
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    left: 43%;
+}
+
+
+.textfield {
+    width: 30vh;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.textfield input {
+
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 3px;
+
+}
+
+.textfield input::placeholder {
+    color: #A4A4A4;
+    font-weight: lighter;
+}
+
+
+.login-button {
+    width: 12rem;
+    padding: 1rem 0rem;
+    margin: 25;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #A400FF;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button input {
+    border: none;
+    background-color: #A400FF;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.login-button a input {
+    text-decoration: none;
+    font-weight: 800;
+    color: #fff;
+}
+
+.card-login {
+    width: 25%;
+    left: 25%;
+    position: relative;
+    top: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo img {
+    width: 60px;
+    height: 65px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+p {
+    padding: 1rem;
+    text-align: center;
+}
+
+p a {
+    color: #A400FF;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #dc8cd6;
+}
+
+#icon {
+    position: relative;
+    cursor: pointer;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1.25rem;
+    left: 10rem;
+}
+
+label {
+    height: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:950px) {
+    body {
+        background: #efe9ef;
+    }
+
+    .imagem-porco {
+        display: none;
+    }
+
+    .card-login {
+        width: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .logo img {
+        width: 60px;
+        height: 65px;
+        position: absolute;
+        top: 15px;
+    }
+
+
+}

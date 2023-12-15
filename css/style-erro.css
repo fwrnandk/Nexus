@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background-color: #efe9ef;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 17vh;
+    position: relative;
+    top: 15px;
+}
+
+.erro-img img {
+    width: 50vh;
+}
+
+.erro-txt {
+    text-align: center;
+}
+
+.erro-txt a,
+.erro-txt2 a {
+    text-decoration: none;
+    color: #a400ff;
+}
+
+.erro-txt a:hover {
+    color: #5c008e;
+}
+
+.erro-txt h2 {
+    padding: .15rem;
+}
+
+.erro-txt2 h2 {
+    padding: 2rem;
+}
+
+.erro-txt2 h2::after {
+    content: "";
+    background-color: #A400FF;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+.erro-txt2 h2:hover::after {
+    width: 100%;
+}

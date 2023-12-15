@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 1.5rem;
+    height: 40vh;
+    background-color: #000;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 3rem;
+}
+
+.user-img i {
+    font-size: 7vh;
+}
+
+.user-img img {
+    width: 7vh;
+}
+
+.user-txt h2 {
+    padding: 0 1rem;
+}
+
+.menu-icon i,
+.close-icon i {
+    font-size: 4vh;
+}
+
+/*começo botoes*/
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5rem 6rem;
+    gap: 5rem;
+    text-align: center;
+}
+
+.button-group button img {
+    width: 8vh;
+}
+
+.button-random button {
+    border: none;
+    background-color: #efe9ef;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-adm button {
+    border: none;
+    background-color: #a400ff;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*botao conta e cartao*/
+.conta-button button {
+    border: none;
+    background-color: #efe9ef;
+    width: 70vh;
+    height: 7vh;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.button-group2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-group2 button {
+    text-align: left;
+    padding: 0 1rem;
+    gap: .5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-group2 button img {
+    width: 5vh;
+}
+
+/*fimbotao conta e cartao*/
+.button-group p,
+.button-group2 p {
+    font-weight: 700;
+}
+
+.button-group a {
+    color: #000;
+}
+
+/*fim botoes*/
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    height: 100vh;
+}
+
+.main .container {
+    width: 100vh;
+    padding-bottom: 5rem;
+    position: absolute;
+    top: 15vh;
+    background-color: #fff;
+    border-radius: 1.5vh;
+    box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.485);
+}
+
+.main .container h2 {
+    padding: 2rem 3rem;
+}
+
+.main .container h2::before {
+    content: '';
+    display: block;
+    width: 0.5rem;
+    height: 4rem;
+    background-color: #A400FF;
+    margin: 0 -.75rem;
+    position: absolute;
+}
+
+/*menu*/
+.hamburger {
+    position: absolute;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 2rem 3rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.close-icon {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    transform: translateX(110%);
+    transition: transform 0.5s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.menu a:hover {
+    color: #A400FF;
+    transition: 0.3s;
+}
+
+.menu h1 {
+    padding: 5rem 0;
+    font-size: 4rem;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+@media(max-width: 1080px) {
+
+    
+    header {
+        padding: .75rem;
+        height: 50vh;
+        background-color: #000;
+        color: #fff;
+    }
+
+    /*começo botoes*/
+    .button-group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1.75rem 2rem;
+        gap: 2.25rem;
+        text-align: center;
+    }
+
+    .button-group button img {
+        width: 5vh;
+    }
+
+    .button-random button {
+        border: none;
+        background-color: #efe9ef;
+        width: 8vh;
+        height: 8vh;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .button-adm button {
+        border: none;
+        background-color: #a400ff;
+        width: 8vh;
+        height: 8vh;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /*botao conta e cartao*/
+    .conta-button button {
+        border: none;
+        background-color: #efe9ef;
+        width: 40vh;
+        height: 7vh;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .button-group2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .button-group2 button {
+        text-align: left;
+        padding: 0 1rem;
+        gap: .5rem;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .button-group2 button img {
+        width: 5vh;
+    }
+
+    /*fimbotao conta e cartao*/
+    .button-group p,
+    .button-group2 p {
+        font-weight: 700;
+    }
+
+    .button-group a {
+        color: #000;
+    }
+
+    /*fim botoes*/
+
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        height: 100vh;
+    }
+
+    .main .container {
+        width: 50vh;
+        padding-bottom: 5rem;
+        position: absolute;
+        top: 25vh;
+        background-color: #fff;
+        border-radius: 1.5vh;
+        box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.485);
+    }
+
+    .main .container h2 {
+        padding: 2rem 3rem;
+    }
+
+    .main .container h2::before {
+        content: '';
+        display: block;
+        width: 0.5rem;
+        height: 4rem;
+        background-color: #A400FF;
+        margin: 0 -.75rem;
+        position: absolute;
+    }
+
+    .menu a {
+        color: #fff;
+        font-size: 2vh;
+    }
+
+    .menu h1 {
+        padding: 3rem 0;
+        font-size: 3vh;
+    }
+    
+   
+}
+
+@media(max-width: 780px) {
+
+    .main .container {
+        top: 20vh;
+    }
+
+}
